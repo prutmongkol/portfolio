@@ -55,7 +55,7 @@ function App() {
         <div className="flex flex-col">
           <h3>Practice Buddy</h3>
           <p>
-            A web app designed for musicians to keep track of their repertoire.
+            A web app designed for musicians to keep track of their repertoire
           </p>
           <span>MUI • React • Node.js • Express.js • MongoDB</span>
         </div>
