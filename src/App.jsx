@@ -72,11 +72,15 @@ function App() {
         <h2 className="col-span-full">Contact</h2>
 
         <span>GitHub</span>
-        <a href="https://github.com/PrutMongkol">github.com/PrutMongkol</a>
+        <a href="https://github.com/PrutMongkol">
+          github.com/PrutMongkol
+          <span className="material-symbols-outlined">north_east</span>
+        </a>
 
         <span>LinkedIn</span>
         <a href="https://www.linkedin.com/in/prut-mongkol/">
           linkedin.com/in/prut-mongkol
+          <span className="material-symbols-outlined">north_east</span>
         </a>
       </main>
     </>
