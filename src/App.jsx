@@ -13,14 +13,14 @@ function Avatar() {
 
 function About() {
   return (
-    <>
-      <h2 className="col-span-full">About</h2>
-      <p className="col-span-full">
+    <div className="col-span-full">
+      <h2 className="mb-0">About</h2>
+      <p className="mt-0">
         Hey, I&apos;m Pete. I started my journey as a software engineer in 2023.
         Craving learning and focused on developing impactful experiences that
         constantly improve based on user feedback. One percent better everyday.
       </p>
-    </>
+    </div>
   );
 }
 
@@ -112,7 +112,7 @@ function Contact() {
 function App() {
   return (
     <>
-      <main className="max-w-xl mx-auto px-4 py-8 grid grid-cols-[150px_1fr] sm:gap-4">
+      <main className="max-w-xl mx-auto px-4 py-6 sm:py-20 grid grid-cols-[150px_1fr] sm:gap-4">
         <Avatar />
         <div className="flex flex-col justify-center">
           <h1>Prut Mongkol (Pete)</h1>
