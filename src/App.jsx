@@ -25,7 +25,7 @@ function App() {
 
         <h2 className="col-span-full">Experience</h2>
 
-        <p>Nov 2023 - Feb 2024</p>
+        <span>Nov 2023 - Feb 2024</span>
         <div className="flex flex-col">
           <h3>Junior Software Developer Bootcamp - Generation Thailand</h3>
           <p>
@@ -33,12 +33,12 @@ function App() {
             essential soft skills and mindsets, and learned about effective
             communication and agile methodologies.
           </p>
-          <p>
+          <span>
             React • Node.js • Express.js • MongoDB • CSS • Tailwind CSS • SQL
-          </p>
+          </span>
         </div>
 
-        <p>Earlier Experience</p>
+        <span>Earlier Experience</span>
         <div className="flex flex-col">
           <p>
             Over ten years of experience in translation (English &lt;-&gt; Thai)
@@ -51,37 +51,33 @@ function App() {
 
         <h2 className="col-span-full">Projects</h2>
 
-        <p>Ongoing</p>
+        <span>Ongoing</span>
         <div className="flex flex-col">
           <h3>Practice Buddy</h3>
           <p>
             A web app designed for musicians to keep track of their repertoire.
           </p>
-          <p>MUI • React • Node.js • Express.js • MongoDB</p>
+          <span>MUI • React • Node.js • Express.js • MongoDB</span>
         </div>
 
-        <p>Jan - Feb 2024</p>
+        <span>Jan - Feb 2024</span>
         <div className="flex flex-col">
           <h3>LogLife - Bootcamp Project</h3>
           <p>
             An exercise tracking web app aimed at beginners with no smartwatches
           </p>
-          <p>Tailwind CSS • React • Node.js • Express.js • MongoDB</p>
+          <span>Tailwind CSS • React • Node.js • Express.js • MongoDB</span>
         </div>
 
         <h2 className="col-span-full">Contact</h2>
 
-        <p>GitHub</p>
-        <p>
-          <a href="https://github.com/PrutMongkol">github.com/PrutMongkol</a>
-        </p>
+        <span>GitHub</span>
+        <a href="https://github.com/PrutMongkol">github.com/PrutMongkol</a>
 
-        <p>LinkedIn</p>
-        <p>
-          <a href="https://www.linkedin.com/in/prut-mongkol/">
-            linkedin.com/in/prut-mongkol
-          </a>
-        </p>
+        <span>LinkedIn</span>
+        <a href="https://www.linkedin.com/in/prut-mongkol/">
+          linkedin.com/in/prut-mongkol
+        </a>
       </main>
     </>
   );

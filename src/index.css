@@ -2,8 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+@layer base {
+  body {
+    @apply bg-gray-950 text-white;
+  }
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  span {
+    @apply text-gray-500;
+  }
+  p {
+    @apply text-gray-400;
+  }
 }
