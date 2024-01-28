@@ -92,6 +92,8 @@ function Contact() {
       <a
         className="col-span-full sm:col-span-1 mb-4 sm:mb-0"
         href="https://github.com/PrutMongkol"
+        target="_blank"
+        rel="noreferrer"
       >
         github.com/PrutMongkol
         <span className="material-symbols-outlined">north_east</span>
@@ -101,6 +103,8 @@ function Contact() {
       <a
         className="col-span-full sm:col-span-1 mb-4 sm:mb-0"
         href="https://www.linkedin.com/in/prut-mongkol/"
+        target="_blank"
+        rel="noreferrer"
       >
         linkedin.com/in/prut-mongkol
         <span className="material-symbols-outlined">north_east</span>
