@@ -5,8 +5,16 @@ function App() {
   return (
     <>
       <main>
-        <h1>Prut Mongkol (Pete)</h1>
-        <p>Software Engineer</p>
+        <div>
+          <img
+            src="/avatar.png"
+            alt="Pete"
+          />
+          <h1>Prut Mongkol (Pete)</h1>
+          <p>Software Engineer</p>
+        </div>
+
+        <h2>About</h2>
         <p>
           Hey, I&apos;m Pete. I started my journey as a software engineer in
           2023. Craving learning and focused on developing impactful experiences
