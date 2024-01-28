@@ -4,18 +4,24 @@
 
 @layer base {
   body {
-    @apply bg-gray-950 text-white;
+    @apply bg-stone-950 text-stone-50 text-sm;
   }
   h1 {
     @apply text-2xl;
   }
   h2 {
-    @apply text-xl;
+    @apply text-base;
+  }
+  h3 {
+    @apply mb-1;
   }
   span {
-    @apply text-gray-500;
+    @apply text-stone-500 mb-1;
   }
   p {
-    @apply text-gray-400;
+    @apply text-stone-400 mb-1;
+  }
+  a {
+    @apply hover:underline
   }
 }
