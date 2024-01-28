@@ -10,7 +10,7 @@
     @apply text-2xl;
   }
   h2 {
-    @apply text-base;
+    @apply text-base my-4;
   }
   h3 {
     @apply mb-1;

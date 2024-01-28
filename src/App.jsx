@@ -4,7 +4,7 @@ import "./App.css";
 function App() {
   return (
     <>
-      <main className="max-w-xl mx-auto px-4 py-8 grid grid-cols-[150px_1fr] gap-4">
+      <main className="max-w-xl mx-auto px-4 py-8 grid grid-cols-[150px_1fr] sm:gap-4">
         <img
           className="rounded-full transition duration-500 ease-in-out hover:scale-110 place-self-center"
           src="/avatar.png"
@@ -25,8 +25,8 @@ function App() {
 
         <h2 className="col-span-full">Experience</h2>
 
-        <span>Nov 2023 - Feb 2024</span>
-        <div className="flex flex-col">
+        <span className="col-span-full sm:col-span-1">Nov 2023 - Feb 2024</span>
+        <div className="col-span-full sm:col-span-1 flex flex-col mb-4 sm:mb-0">
           <h3>Junior Software Developer Bootcamp - Generation Thailand</h3>
           <p>
             Developed technical skills in building web applications. Gained
@@ -38,21 +38,19 @@ function App() {
           </span>
         </div>
 
-        <span>Earlier Experience</span>
-        <div className="flex flex-col">
+        <span className="col-span-full sm:col-span-1">Earlier Experience</span>
+        <div className="col-span-full sm:col-span-1 flex flex-col mb-4: sm:mb-0">
           <p>
-            Over ten years of experience in translation (English &lt;-&gt; Thai)
-          </p>
-          <p>
-            Five years of experience in coal mining industry, including
+            Over ten years of experience in translation (English &lt;-&gt;
+            Thai). Five years of experience in coal mining industry, including
             logistics and corporate communications.
           </p>
         </div>
 
         <h2 className="col-span-full">Projects</h2>
 
-        <span>Ongoing</span>
-        <div className="flex flex-col">
+        <span className="col-span-full sm:col-span-1">Ongoing</span>
+        <div className="col-span-full sm:col-span-1 flex flex-col mb-4 sm:mb-0">
           <h3>Practice Buddy</h3>
           <p>
             A web app designed for musicians to keep track of their repertoire
@@ -60,8 +58,8 @@ function App() {
           <span>MUI • React • Node.js • Express.js • MongoDB</span>
         </div>
 
-        <span>Jan - Feb 2024</span>
-        <div className="flex flex-col">
+        <span className="col-span-full sm:col-span-1">Jan - Feb 2024</span>
+        <div className="col-span-full sm:col-span-1 flex flex-col mb-4 sm:mb-0">
           <h3>LogLife - Bootcamp Project</h3>
           <p>
             An exercise tracking web app aimed at beginners with no smartwatches
@@ -71,14 +69,20 @@ function App() {
 
         <h2 className="col-span-full">Contact</h2>
 
-        <span>GitHub</span>
-        <a href="https://github.com/PrutMongkol">
+        <span className="col-span-full sm:col-span-1">GitHub</span>
+        <a
+          className="col-span-full sm:col-span-1 mb-4 sm:mb-0"
+          href="https://github.com/PrutMongkol"
+        >
           github.com/PrutMongkol
           <span className="material-symbols-outlined">north_east</span>
         </a>
 
-        <span>LinkedIn</span>
-        <a href="https://www.linkedin.com/in/prut-mongkol/">
+        <span className="col-span-full sm:col-span-1">LinkedIn</span>
+        <a
+          className="col-span-full sm:col-span-1 mb-4 sm:mb-0"
+          href="https://www.linkedin.com/in/prut-mongkol/"
+        >
           linkedin.com/in/prut-mongkol
           <span className="material-symbols-outlined">north_east</span>
         </a>
