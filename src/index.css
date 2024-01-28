@@ -22,7 +22,7 @@
     @apply text-stone-400 mb-1;
   }
   a {
-    @apply hover:underline;
+    @apply hover:underline active:underline;
   }
 }
 
