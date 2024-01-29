@@ -70,7 +70,7 @@ function Projects() {
         title="Practice Buddy"
         date="Ongoing"
         description="A web app designed for musicians to keep track of their repertoire"
-        skills="MUI • React • Node.js • Express.js • MongoDB"
+        skills="TS • MUI • React • Node.js • Express.js • MongoDB"
       />
       
       <SectionItem
