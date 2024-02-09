@@ -92,7 +92,7 @@ function Projects() {
         description="An exercise tracking web app aimed at beginners with no smartwatches"
         skills="React • Tailwind CSS • daisyUI • Node.js • Express.js • MongoDB"
         link="https://frontend-jsd6-group-8.vercel.app/"
-        image="public/LogLife.png"
+        image="/LogLife.png"
       />
     </>
   );
