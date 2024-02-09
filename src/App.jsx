@@ -106,15 +106,15 @@ function SideProjects() {
       <SectionItem
         title="React CRUD - One-day Project"
         date="Jan 2024"
-        description="A one-day assessment project to build a CRUD app for Generation Thailand JSD6 coding bootcamp. Connecting with a pre-built API."
-        skills="React"
+        description="A one-day assessment project to build a CRUD app, connecting with a pre-built API. For Generation Thailand JSD6 coding bootcamp."
+        skills="React • Tailwind CSS"
         link="https://github.com/PrutMongkol/20-pete-career-changer-react-assessment"
       />
 
       <SectionItem
         title="Find Your Hat - One-day Project"
         date="Dec 2023"
-        description="A one-day assessment project to build a terminal game for Generation Thailand JSD6 coding bootcamp."
+        description="A one-day assessment project to build a terminal game. For Generation Thailand JSD6 coding bootcamp."
         skills="JavaScript • Node.js"
         link="https://github.com/PrutMongkol/find-your-hat"
       />
@@ -122,7 +122,7 @@ function SideProjects() {
       <SectionItem
         title="Colmar Academy - One-day Project"
         date="Nov 2023"
-        description="A one-day assessment project to build a landing page for Generation Thailand JSD6 coding bootcamp."
+        description="A one-day assessment project to build a landing page. For Generation Thailand JSD6 coding bootcamp."
         skills="HTML • Vanilla CSS"
         link="https://github.com/PrutMongkol/20-pete-colmar"
       />
