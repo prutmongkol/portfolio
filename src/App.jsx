@@ -24,11 +24,12 @@ function About() {
   );
 }
 
-function SectionItem({ title, date, description, skills, link = null }) {
+function SectionItem({ title, date, description, skills, link = null, image = null }) {
   return (
     <>
       <span className="col-span-full sm:col-span-1">{date}</span>
       <div className="col-span-full sm:col-span-1 flex flex-col mb-4 sm:mb-0">
+        {image && <img className="w-12 h-12 mb-2" src={image} alt="" />}
         {link ? (
           <a
             className="col-span-full sm:col-span-1 mb-4 sm:mb-0"
@@ -91,6 +92,39 @@ function Projects() {
         description="An exercise tracking web app aimed at beginners with no smartwatches"
         skills="React • Tailwind CSS • daisyUI • Node.js • Express.js • MongoDB"
         link="https://frontend-jsd6-group-8.vercel.app/"
+        image="public/LogLife.png"
+      />
+    </>
+  );
+}
+
+function SideProjects() {
+  return (
+    <>
+      <h2 className="col-span-full">Side Projects</h2>
+
+      <SectionItem
+        title="React CRUD - One-day Project"
+        date="Jan 2024"
+        description="A one-day assessment project to build a CRUD app for Generation Thailand JSD6 coding bootcamp. Connecting with a pre-built API."
+        skills="React"
+        link="https://github.com/PrutMongkol/20-pete-career-changer-react-assessment"
+      />
+
+      <SectionItem
+        title="Find Your Hat - One-day Project"
+        date="Dec 2023"
+        description="A one-day assessment project to build a terminal game for Generation Thailand JSD6 coding bootcamp."
+        skills="JavaScript • Node.js"
+        link="https://github.com/PrutMongkol/find-your-hat"
+      />
+
+      <SectionItem
+        title="Colmar Academy - One-day Project"
+        date="Nov 2023"
+        description="A one-day assessment project to build a landing page for Generation Thailand JSD6 coding bootcamp."
+        skills="HTML • Vanilla CSS"
+        link="https://github.com/PrutMongkol/20-pete-colmar"
       />
     </>
   );
@@ -139,6 +173,7 @@ function App() {
         <About />
         <Experience />
         <Projects />
+        <SideProjects />
         <Contact />
       </main>
     </>
