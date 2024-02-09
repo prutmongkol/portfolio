@@ -24,12 +24,24 @@ function About() {
   );
 }
 
-function SectionItem({ title, date, description, skills }) {
+function SectionItem({ title, date, description, skills, link = null }) {
   return (
     <>
       <span className="col-span-full sm:col-span-1">{date}</span>
       <div className="col-span-full sm:col-span-1 flex flex-col mb-4 sm:mb-0">
-        <h3>{title}</h3>
+        {link ? (
+          <a
+            className="col-span-full sm:col-span-1 mb-4 sm:mb-0"
+            href={link}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {title}
+            <span className="material-symbols-outlined">north_east</span>
+          </a>
+        ) : (
+          <h3>{title}</h3>
+        )}
         <p>{description}</p>
         <span>{skills}</span>
       </div>
@@ -72,12 +84,13 @@ function Projects() {
         description="A web app designed for musicians to keep track of their repertoire"
         skills="TS • MUI • React • Node.js • Express.js • MongoDB"
       />
-      
+
       <SectionItem
         title="LogLife - Bootcamp Project"
         date="Jan - Feb 2024"
         description="An exercise tracking web app aimed at beginners with no smartwatches"
-        skills="Tailwind CSS • React • Node.js • Express.js • MongoDB"
+        skills="React • Tailwind CSS • daisyUI • Node.js • Express.js • MongoDB"
+        link="https://frontend-jsd6-group-8.vercel.app/"
       />
     </>
   );
