@@ -24,7 +24,15 @@ function About() {
   );
 }
 
-function SectionItem({ title, date, description, skills, link = null, image = null }) {
+function SectionItem({
+  title,
+  date,
+  description,
+  skills,
+  link = null,
+  image = null,
+  github = null,
+}) {
   return (
     <>
       <span className="col-span-full sm:col-span-1">{date}</span>
@@ -43,7 +51,18 @@ function SectionItem({ title, date, description, skills, link = null, image = nu
         ) : (
           <h3>{title}</h3>
         )}
-        <p>{description}</p>
+        <p>
+          {description}
+        </p>
+        {github && (
+          <a
+            href={github}
+            target="_blank"
+            rel="noreferrer"
+          >GitHub
+            <span className="material-symbols-outlined">north_east</span>
+          </a>
+        )}          
         <span>{skills}</span>
       </div>
     </>
@@ -91,8 +110,9 @@ function Projects() {
         date="Jan - Feb 2024"
         description="An exercise tracking web app aimed at beginners with no smartwatches"
         skills="React • Tailwind CSS • daisyUI • Node.js • Express.js • MongoDB"
-        link="https://frontend-jsd6-group-8.vercel.app/"
+        link="https://loglife.guru/"
         image="/LogLife.png"
+        github={"https://github.com/JSD6G8/frontend"}
       />
     </>
   );
