@@ -1,13 +1,7 @@
 /* eslint-disable react/prop-types */
-import "./App.css";
-
 function Avatar() {
   return (
-    <img
-      className="rounded-full transition duration-500 ease-in-out hover:scale-110 place-self-center"
-      src="/avatar.png"
-      alt="Pete"
-    />
+    <img className="rounded-full place-self-center hover:animate-wiggle" src="/avatar.png" alt="Pete" />
   );
 }
 
@@ -51,18 +45,13 @@ function SectionItem({
         ) : (
           <h3>{title}</h3>
         )}
-        <p>
-          {description}
-        </p>
+        <p>{description}</p>
         {github && (
-          <a
-            href={github}
-            target="_blank"
-            rel="noreferrer"
-          >GitHub
+          <a href={github} target="_blank" rel="noreferrer">
+            GitHub
             <span className="material-symbols-outlined">north_east</span>
           </a>
-        )}          
+        )}
         <span>{skills}</span>
       </div>
     </>
