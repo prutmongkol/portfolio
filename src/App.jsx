@@ -1,7 +1,13 @@
 /* eslint-disable react/prop-types */
+import { useState } from "react";
+
 function Avatar() {
   return (
-    <img className="rounded-full place-self-center hover:animate-wiggle" src="/avatar.png" alt="Pete" />
+    <img
+      className="rounded-full place-self-center hover:animate-wiggle"
+      src="/avatar.png"
+      alt="Pete"
+    />
   );
 }
 
@@ -170,9 +176,28 @@ function Contact() {
 }
 
 function App() {
+  const [theme, setTheme] = useState("dark_mode");
+
+  const handleThemeChange = () => {
+    const html = document.querySelector("html");
+    if (html.classList.contains("dark")) {
+      html.classList.remove("dark");
+      setTheme("light_mode");
+    } else {
+      html.classList.add("dark");
+      setTheme("dark_mode");
+    }
+  };
   return (
     <>
       <main className="max-w-xl mx-auto px-4 py-6 sm:py-20 grid grid-cols-[150px_1fr] sm:gap-4">
+        <div
+          className="material-symbols-outlined col-span-2 place-self-end sticky -top-5 translate-y-10 cursor-pointer select-none"
+          style={{ fontSize: "2rem" }}
+          onClick={handleThemeChange}
+        >
+          {theme}
+        </div>
         <Avatar />
         <div className="flex flex-col justify-center">
           <h1>Prut Mongkol (Pete)</h1>
