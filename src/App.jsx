@@ -191,13 +191,13 @@ function App() {
   return (
     <>
       <main className="max-w-xl mx-auto px-4 py-6 sm:py-20 grid grid-cols-[150px_1fr] sm:gap-4">
-        <div
-          className="material-symbols-outlined col-span-2 place-self-end sticky top-5 cursor-pointer select-none hover:animate-wiggle"
+        <button
+          className="material-symbols-outlined col-span-2 place-self-end sticky top-5 select-none hover:animate-wiggle"
           style={{ fontSize: "2rem" }}
           onClick={handleThemeChange}
         >
           {theme}
-        </div>
+        </button>
         <Avatar />
         <div className="flex flex-col justify-center">
           <h1>Prut Mongkol (Pete)</h1>
