@@ -192,7 +192,7 @@ function App() {
     <>
       <main className="max-w-xl mx-auto px-4 py-6 sm:py-20 grid grid-cols-[150px_1fr] sm:gap-4">
         <div
-          className="material-symbols-outlined col-span-2 place-self-end sticky -top-5 translate-y-10 cursor-pointer select-none"
+          className="material-symbols-outlined col-span-2 place-self-end sticky top-5 cursor-pointer select-none hover:animate-wiggle"
           style={{ fontSize: "2rem" }}
           onClick={handleThemeChange}
         >
