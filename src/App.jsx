@@ -20,7 +20,6 @@ function About() {
                 in 2023. I&apos;m keenly interested in back-end development.
                 Powered by caffeine.
             </p>
-            <p className="mt-0">One percent better everyday.</p>
         </div>
     );
 }
@@ -73,6 +72,13 @@ function Experience() {
     return (
         <>
             <h2 className="col-span-full">Experience</h2>
+
+            <SectionItem
+                title="Full Stack Developer - Gofive Co., Ltd."
+                date="Jun 2024 - Jul 2024"
+                description="•	Collaborated with team members to develop features and maintain Venio, a B2B CRM solution based on Angular, .NET Core, and Microsoft SQL Server"
+                skills="Angular • C# • .NET Core • T-SQL • SQL Server"
+            />
 
             <SectionItem
                 title="Junior Software Developer Bootcamp - Generation Thailand"
